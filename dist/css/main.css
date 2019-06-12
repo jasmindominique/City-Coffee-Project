@@ -1,0 +1,725 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #E7D3C4;
+}
+
+/* 2. Content ================================= */
+header {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+}
+
+header h1 {
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-style: uppercase;
+}
+
+nav ul {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+}
+
+@media (min-width: 600px) {
+	nav ul {
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+	}
+}
+
+nav li {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+	nav li {
+		margin: 20px 10px 20px 10px;
+	}
+}
+
+nav a {
+	color: #FFFFFF;
+	font-family: "Zilla Slab", serif;
+	font-weight: medium;
+	font-size: 1.2rem;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
+
+h2 {
+	color: #FFFFFF;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5rem;
+}
+
+button {
+	background-color: #DD5800;
+	color: #FFFFFF;
+	padding: 25px 25px;
+	width: auto;
+	min-width: 200px;
+	border-radius: 14px;
+	border: 2px solid #A65200;
+	position: absolute;
+	top: 65%;
+	font-size: 1rem;
+}
+
+.main-header {
+	height: 220px;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	z-index: 1;
+	background: #262626;
+	background-color: rgba(38, 38, 38, 0.9);
+}
+
+.main-header img {
+	margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+	.main-header {
+		-webkit-box-align: none;
+		        align-items: none;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		-webkit-box-pack: justify;
+		        justify-content: space-between;
+		padding: 40px;
+		height: 100px;
+	}
+}
+
+.banner {
+	background-image: url("../img/lee2.jpg");
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 550px;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	        align-items: center;
+	justify-content: space-around;
+}
+
+.banner h2 {
+	position: absolute;
+	top: 60%;
+	margin: 10px;
+}
+
+.banner button {
+	top: 80%;
+}
+
+@media (min-width: 600px) {
+	.banner {
+		background-position: center;
+	}
+}
+
+.our-story-div {
+	display: -webkit-box;
+	display: flex;
+	background-color: #E7D3C4;
+}
+
+.our-story {
+	height: 100%;
+}
+
+@media (min-width: 600px) {
+	.our-story {
+		width: 55%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.our-story {
+		width: 60%;
+	}
+}
+
+@media (min-width: 1380px) {
+	.our-story {
+		width: 70%;
+	}
+}
+
+.our-story h1 {
+	text-align: center;
+	font-family: "Zilla Slab", serif;
+	color: #262626;
+	font-weight: medium;
+	font-size: 2rem;
+	margin: 25px 20px;
+}
+
+.our-story p {
+	line-height: 1.5rem;
+	font-family: "Montserrat", sans-serif;
+	color: #7a736f;
+	margin: 8%;
+}
+
+.story-image img {
+	display: none;
+}
+
+@media (min-width: 600px) {
+	.story-image img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		   object-fit: cover;
+	}
+}
+
+.drink-menu {
+	width: 100%;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	background-color: #E7D3C4;
+}
+
+.drink-menu span.amount {
+	float: right;
+}
+
+@media (min-width: 1024px) {
+	.drink-menu {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		justify-content: space-around;
+		padding: 20px;
+	}
+}
+
+.drink-image {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.drink-image {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.drink-image {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+}
+
+.drink-image img {
+	width: 100%;
+}
+
+.drink-banner {
+	height: 330px;
+	background-size: cover;
+	position: relative;
+	background-image: url("../img/beans.png");
+}
+
+@media (min-width: 600px) {
+	.drink-banner {
+		background-image: url("../img/beans2.png");
+		background-size: auto;
+		height: 180px;
+	}
+}
+
+.drink-banner h1 {
+	position: absolute;
+	bottom: 15%;
+	color: #fff;
+	font-size: 1.9rem;
+	font-family: "Zilla Slab", serif;
+	width: 100%;
+	text-align: center;
+}
+
+.drink {
+	width: 100%;
+	padding: 3%;
+	max-width: 1080px;
+}
+
+.drink h2 {
+	text-align: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	color: #262626;
+	font-size: 1.8rem;
+	font-family: "Zilla Slab", serif;
+	margin: 5% 0 8% 0;
+}
+
+@media (min-width: 600px) {
+	.drink h2 {
+		margin: 0 0 8% 0;
+	}
+}
+
+.drink li {
+	margin: 5%;
+}
+
+@media (min-width: 600px) {
+	.drink {
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+	}
+}
+
+@media (min-width: 1024px) {
+	.drink {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+	}
+}
+
+.drink-prices {
+	font-family: "Montserrat", sans-serif;
+	color: #7a736f;
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.drink-prices {
+		width: 50%;
+		padding: 0 3%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.drink-prices {
+		width: 100%;
+	}
+}
+
+@media (min-width: 600px) {
+	.page-wrapper {
+		display: -webkit-box;
+		display: flex;
+	}
+}
+
+@media (min-width: 600px) {
+	.products-ordering {
+		width: 50%;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+	}
+}
+
+@media (min-width: 1024px) {
+	.products-ordering {
+		width: 80%;
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+.order-banner {
+	background-image: url("../img/drinks.jpg");
+	height: 330px;
+	background-size: cover;
+	position: relative;
+}
+
+@media (min-width: 600px) {
+	.order-banner {
+		background-image: url("../img/drink-banner.jpg");
+		height: 180px;
+	}
+}
+
+.order-banner .order-text {
+	font-family: "Zilla Slab", serif;
+	font-size: 1.9rem;
+	color: #fff;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 70%;
+}
+
+.order-banner .cart-button {
+	position: absolute;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	width: 100%;
+	top: 87%;
+}
+
+.order-banner .cart-button button {
+	padding: 2px 3px;
+	width: 140px;
+	min-width: 100px;
+	border-radius: 5px;
+}
+
+@media (min-width: 1024px) {
+	.order-banner .cart-button button {
+		display: none;
+	}
+}
+
+@media (min-width: 600px) {
+	.order-banner .cart-button button {
+		display: none;
+	}
+}
+
+.order-banner .cart-button img {
+	width: 20%;
+}
+
+.drink-list {
+	background-color: #E7D3C4;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	margin: 5% 5%;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	font-family: "Zilla Slab", serif;
+}
+
+@media (min-width: 1024px) {
+	.drink-list {
+		width: 40%;
+	}
+}
+
+.drink-orderform {
+	position: absolute;
+	z-index: 1;
+	top: 330px;
+	right: 0;
+	left: 0px;
+	bottom: -346%;
+	background-color: rgba(38, 38, 38, 0.6);
+}
+
+@media (min-width: 600px) {
+	.drink-orderform {
+		background-color: #E7D3C4;
+		position: -webkit-sticky;
+		position: sticky;
+		border-left: 2px solid #472716;
+		width: 50%;
+	}
+}
+
+.your-cart {
+	padding: 5%;
+	background-color: #E7D3C4;
+	position: relative;
+	top: 100px;
+	margin: 13%;
+	width: 70%;
+	border-radius: 18px;
+}
+
+.your-cart h1 {
+	text-align: center;
+	margin-bottom: 10%;
+	font-size: 1.7rem;
+	font-family: "Zilla Slab", serif;
+}
+
+.your-cart label, .your-cart p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+	.your-cart {
+		top: 0;
+		margin: 8%;
+		padding: 0px;
+		width: 85%;
+	}
+}
+
+.ordering {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	margin: 0% 0 6% 0;
+}
+
+.ordering input#tritemug-selection {
+	margin-left: 56px;
+	width: 40px;
+}
+
+@media (min-width: 600px) {
+	.ordering input#tritemug-selection {
+		margin-left: 133px;
+		width: 50px;
+	}
+}
+
+.ordering input#espresso-selection {
+	margin-left: 64px;
+	width: 40px;
+}
+
+@media (min-width: 600px) {
+	.ordering input#espresso-selection {
+		margin-left: 139px;
+		width: 50px;
+	}
+}
+
+.ordering input#peruvian-selection {
+	width: 40px;
+}
+
+@media (min-width: 600px) {
+	.ordering input#peruvian-selection {
+		margin-left: 74px;
+		width: 50px;
+	}
+}
+
+.product-info {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	margin: 4% 0 6%;
+	color: #262626;
+}
+
+.product-info h1 {
+	font-size: 1.3rem;
+	margin-bottom: 5%;
+	color: #262626;
+}
+
+.product-info h2 {
+	font-size: .8rem;
+	color: #262626;
+}
+
+.product-pricing {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+}
+
+.product-pricing h3 {
+	font-size: 1.3rem;
+}
+
+.product-pricing button {
+	padding: 5px 0px;
+	min-width: 150px;
+	border-radius: 7px;
+	border: 2px solid #A65200;
+	position: relative;
+}
+
+.ordering-total {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	margin: 8% 0 8% 0;
+}
+
+.checkout-button {
+	text-align: center;
+}
+
+.checkout-button button {
+	padding: 12px 0px;
+	min-width: 150px;
+	border-radius: 7px;
+	border: 2px solid #A65200;
+	position: relative;
+	text-align: center;
+	width: 200px;
+}
+
+footer {
+	background-color: #262626;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	line-height: 2rem;
+	font-family: "Zilla Slab", serif;
+}
+
+footer ul li {
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+	footer {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		        flex-direction: row;
+		-webkit-box-pack: space-evenly;
+		        justify-content: space-evenly;
+	}
+}
+
+footer h3 {
+	color: #FFFFFF;
+	font-family: "Zilla Slab", serif;
+	text-transform: uppercase;
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+footer .hours {
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-bottom: .7rem;
+}
+
+footer .social {
+	margin-bottom: .7rem;
+}
+
+footer .social a {
+	color: #FFFFFF;
+	-webkit-box-align: center;
+	        align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

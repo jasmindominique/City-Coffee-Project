@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Order Page</title>
+		<meta name="Drink Menu" content="Drink Menu">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="dist/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Zilla+Slab&display=swap" rel="stylesheet">
+		
+	</head>
+	<body>
+
+		<header class="main-header">
+			<div>
+				<img src="dist/img/Logolight.svg" alt="coffee company logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="drinks.html">DRINKS</a></li>
+					<li><a href="ordering.html">ORDER</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="order-banner">
+			<div class="order-text">
+				<h1>Order Online</h1>
+			</div>
+				<div class="cart-button">
+					<button>Your Cart
+						<img src="dist/img/cart-white.svg" alt="white logo shopping basket">
+					</button>
+				</div>
+		</div>
+
+	<div class="page-wrapper">
+
+		<section class="products-ordering">
+
+			<div class="drink-list">
+				<div class="drink-image">
+					<img class="drink-img" alt="coffee beans and cup" src="dist/img/coffeebeans.jpeg">
+				</div>
+					<div class="product-info">
+						<div class="product-stats">
+							<h1>Peruvian Blonde</h1>
+							<h2>Breakfast Roast</h2>
+						</div>
+							<img class="coffee-bean" src="dist/img/tan-bean.svg" alt="tan coffee bean">
+					</div>
+						<div class="product-pricing">
+							<h3>$18</h3>
+							<button class="add-button">Add to Cart</button>
+						</div>
+			</div>
+
+			<div class="drink-list">
+				<div class="drink-image">
+					<img class="drink-img" alt="coffee beans and cup" src="dist/img/coffeebeans.jpeg">
+				</div>
+					<div class="product-info">
+						<div class="product-stats">
+							<h1>Sumatra Blend</h1>
+							<h2>Full-City Roast</h2>
+						</div>
+							<img class="coffee-bean" src="dist/img/med-bean.svg" alt="medium brown coffee bean">
+					</div>
+						<div class="product-pricing">
+							<h3>$18</h3>
+							<button class="add-button">Add to Cart</button>
+						</div>
+			</div>
+
+			<div class="drink-list">
+				<div class="drink-image">
+					<img class="drink-img" alt="coffee beans and cup" src="dist/img/coffeebeans.jpeg">
+				</div>
+					<div class="product-info">
+						<div class="product-stats">
+							<h1>Espresso</h1>
+							<h2>Italian Roast</h2>
+						</div>
+							<img class="coffee-bean" src="dist/img/brown-bean.svg" alt="dark brown coffee bean">
+					</div>
+						<div class="product-pricing">
+							<h3>$22</h3>
+							<button class="add-button">Add to Cart</button>
+						</div>
+			</div>
+
+			<div class="drink-list">
+				<div class="drink-image">
+					<img class="drink-img" alt="coffe cup with heart" src="dist/img/lovecup.png">
+				</div>
+					<div class="product-info">
+						<div class="product-stats">
+							<h1>Trite Mug</h1>
+							<h2>Something to drink from</h2>
+						</div>
+					</div>
+						<div class="product-pricing">
+							<h3>$14</h3>
+							<button class="add-button">Add to Cart</button>
+						</div>
+			</div>
+
+			<div class="drink-list">
+				<div class="drink-image">
+					<img class="drink-img" alt="beans in shape of a heart" src="dist/img/beanheart.png">
+				</div>
+					<div class="product-info">
+						<div class="product-stats">
+							<h1>Gift Card</h1>
+							<h2>The gift of caffine</h2>
+						</div>
+					</div>
+						<div class="product-pricing">
+							<h3>$25</h3>
+							<button class="add-button">Add to Cart</button>
+						</div>
+			</div>
+		</section>
+	
+
+		<section class="drink-orderform">
+			<div class="your-cart">
+				<h1>YOUR CART</h1>
+					<form id="my-cart">
+
+					<div class="ordering">
+						<label for="peruvian-selection">Peruvian Blonde</label>
+						<input id="peruvian-selection" type="number" name="peruvian-selection" min="1">
+						<p class="amount">$18</p>
+					</div>
+
+					<div class="ordering">
+						<label for="espresso-selection">Espresso</label>
+						<input id="espresso-selection" type="number" name="espresso-selection" min="1">
+						<p class="amount">$22</p>
+					</div>
+
+					<div class="ordering">
+						<label for="tritemug-selection">Trite Mug</label>
+						<input id="tritemug-selection" type="number" name="tritemug-selection" min="1">
+						<p class="amount">$14</p>
+					</div>
+
+					<hr>
+
+					<div class="ordering-total">
+						<p class="total">Total</p>
+						<p class="amount">$54</p>
+					</div>
+
+					<div class="checkout-button">
+						<button class="checkoutbutton" type="submit">Checkout</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+	</div>
+
+		<footer>
+			<div class="hours">
+			<ul>
+				<h3>Hours</h3>
+				<li>Weekdays: 7am - 4pm</li>
+				<li>Saturday: 7am - 4pm</li>
+				<li>Sunday: 9am - 2pm</li>
+			</ul>
+		</div>
+
+		<div class="social">
+			<ul>
+				<h3>Social</h3>
+				<li><a href="">Instagram</a></li>
+				<li><a href="">Facebook</a></li>
+				<li><a href="">Twitter</a></li>
+			</ul>
+		</div>
+		</footer>
+
+		<script src="dist/js/main.js"></script>
+
+	</body>
+</html>
+
+
+<!-- <div class="drink-list">
+				<img class="drink-img" alt="coffeedrink" src="dist/img/coffeebeans.png">
+				<div class="drink-info">
+					<h1>Peruvian Blonde</h1>
+					<h2>Breakfast Roast</h2>
+					<h3>$18</h3>
+					<button class="add-button">Add to Cart</button>
+				</div>
+			</div> -->
+
+<!-- 	<div class="drink-list">
+		<div class="product-image">
+			<img class="drink-img" alt="coffeedrink" src="dist/img/coffeebeans.png">
+				<div class="product-stats">
+					<h1>Peruvian Blonde</h1>
+					<h2>Breakfast Roast</h2>
+				</div>
+					<img class="coffee-bean" src="dist/img/coffeebeans.png">
+				</div>
+					<div class="drink-pricing">
+						<h3>$18</h3>
+						<button class="add-button">Add to Cart</button>
+					</div>
+			</div>
+	</div> -->
